@@ -125,8 +125,8 @@ if [ ! -d /vagrant/source ]; then
    mkdir /vagrant/source
 fi
 
-if [ ! -f /vagrant/source/magento-1.9.2.3.tar.gz ]; then
-   wget -c https://github.com/OpenMage/magento-mirror/archive/1.9.2.3.tar.gz -O /vagrant/source/magento-1.9.2.3.tar.gz
+if [ ! -f /vagrant/source/magento-1.9.3.2.tar.gz ]; then
+   wget -c https://github.com/OpenMage/magento-mirror/archive/1.9.3.2.tar.gz -O /vagrant/source/magento-1.9.3.2.tar.gz
 fi
 
 if [ ! -f /vagrant/source/magento-sample-data-1.9.1.0.tar.gz ]; then
@@ -135,7 +135,7 @@ fi
 echo "done."
 
 echo "Extract Magento and sample data to /vagrant/httpdocs ..."
-tar zxvf /vagrant/source/magento-1.9.2.3.tar.gz -C /vagrant/httpdocs --strip-components=1
+tar zxvf /vagrant/source/magento-1.9.3.2.tar.gz -C /vagrant/httpdocs --strip-components=1
 tar zxvf /vagrant/source/magento-sample-data-1.9.1.0.tar.gz -C /vagrant/httpdocs --strip-components=1
 echo "done."
 

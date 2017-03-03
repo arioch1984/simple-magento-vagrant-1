@@ -21,6 +21,7 @@ Icon
 # --------------------
 /httpdocs/
 .vagrant
+vagrant/source/*
 
 
 #
